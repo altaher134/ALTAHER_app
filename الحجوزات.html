@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <style>
+        body {
+          background-image: url('images/987.avif');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: 100% 100%;
+        }
+        </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الحجوزات</title>
+    <link rel="stylesheet" href="css/ألحجوزات.css">
+</head>
+<body>
+    <header>
+        <center>
+            <div>
+                <aside>
+                    <header>
+                        <button onclick="location.href='الصفحة الرئيسية.html'">الصفحة الرئيسية</button>
+                    </header>
+                </aside>
+            </div>
+        </center>
+    </header>
+</body>
+
+<body>
+    <div class="container">
+        <h1 class="page-title">احجز جولتك في الجولف الآن</h1>
+
+        <div class="card">
+            <select id="service" class="input">
+                <option value="golf">حجز ملعب جولف</option>
+                <option value="tour">جولة سياحية</option>
+                <option value="lesson">دروس جولف</option>
+            </select>
+
+            <div class="input-group">
+                <label for="date">اختر تاريخ الرحلة</label>
+                <input type="date" id="date" class="input">
+            </div>
+
+            <div class="input-group">
+                <label for="people">عدد الأشخاص</label>
+                <input type="number" id="people" class="input" min="1" placeholder="عدد الأشخاص">
+            </div>
+
+            <button class="button-n" onclick="bookNow()">احجز الآن</button>
+
+            
+        </div>
+
+        <div class="c1">
+            <h2 class="title-1">لماذا تحجز معنا؟</h2>
+            <ul class="text-1">
+                <li>تجربة جولف مميزة وملاعب عالمية</li>
+                <li>جولات سياحية ممتعة في أجمل المواقع</li>
+                <li>أسعار منافسة وعروض حصرية</li>
+            </ul>
+        </div>
+
+        <div class="c2">
+            <h2 class="title-1">آراء بعض من عملائنا</h2>
+            <p>عمار: تجربة جميلة المكان راقي والخدمة رائعة</p>
+            <p>أحمد: تجربة رائعة الملاعب منظمة والخدمة ممتازة</p>
+        </div>
+
+        <div id="message"></div>
+   
+
+    <script src="js/الحجوزات.js"></script>
+</body>
+</html>
